@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "bQz8XibeDe8mk2Dx6y17MQGMcwrUpazTYCtD6bInPKKRg+x1vfi/h6Cybg5ymguJYhOWccFfD//BNhJe04k3Uw==",
+  "success": true,
+  "projectFilePath": "D:\\DotnetCore\\Examples\\CoronaVirusCore\\CoronaVirusCore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Deepak.Agarwal\\.nuget\\packages\\odetocode.usenodemodules\\3.0.0\\odetocode.usenodemodules.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
