@@ -1,0 +1,22 @@
+﻿<h2>shopping cart</h2>
+<div>Count: {{ data.order.orderItems.length }}</div>
+<div>Total amount: {{ data.order.totalAmount  | currency: "INR":true }}</div>
+<table class="table table-condensed table-hover">
+    <thead>
+        <tr>
+            <td>Product</td>
+            <td>Quantity</td>
+            <td>Price</td>
+            <td>Total</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let o of data.order.orderItems">
+            <td>{{o.productTitle}}</td>
+            <td>{{o.quantity}}</td>
+            <td>{{o.unitPrice | currency:"INR":true}}</td>
+            <td>{{ (o.quantity  *  o.unitPrice) | currency: "INR":true}}</td>
+        </tr>
+    </tbody>
+</table>
+<button class="btn btn-success" *ngIf="data.order.orderItems.length > 0" (click)="onCheckOut()" >Checkout</button>

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace CoronaVirusCore.Util
+namespace DeepakGallery.Util
 {
     public class StartThreading
     {

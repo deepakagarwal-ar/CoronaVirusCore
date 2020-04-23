@@ -1,4 +1,4 @@
-﻿namespace CoronaVirusCore.Services
+﻿namespace DeepakGallery.Services
 {
     public interface IMailService
     {

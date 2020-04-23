@@ -1,0 +1,18 @@
+{
+  "Color": {
+    "Favorite": "Pink"
+  },
+  "ConnectionStrings": {
+    "GalleryConnectionString": "server=(localdb)\\ProjectsV13;Database=GalleryDb;Integrated Security=true; MultipleActiveResultSets=true;"
+  },
+  "Logging": {
+    "Loglevel": {
+      "Default": "Information"
+    }
+  },
+  "Tokens": {
+    "Key": "fksdjfsefdskfjdfsdkfdsfds",
+    "Issurer": "localhost",
+    "Audience": "http://localhost:8888"
+  }
+}

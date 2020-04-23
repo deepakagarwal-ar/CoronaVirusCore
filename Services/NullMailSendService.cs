@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CoronaVirusCore.Services
+namespace DeepakGallery.Services
 {
     public class NullMailSendService : IMailService
     {

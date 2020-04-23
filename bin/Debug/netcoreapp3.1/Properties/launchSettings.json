@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "CoronaVirusCore": {
+    "DeepakGallery": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

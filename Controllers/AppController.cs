@@ -1,5 +1,7 @@
-﻿using CoronaVirusCore.Services;
-using CoronaVirusCore.ViewModel;
+﻿using DeepakGallery.Data;
+using DeepakGallery.Services;
+using DeepakGallery.ViewModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -7,15 +9,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CoronaVirusCore.Controllers
+namespace DeepakGallery.Controllers
 {
     public class AppController : Controller
     {
         private readonly IMailService mailService;
+        private readonly IGalleryRepository repository;
 
-        public AppController(IMailService mailService)
+        public AppController(IMailService mailService, IGalleryRepository repository)
         {
             this.mailService = mailService;
+            this.repository = repository;
         }
 
         public IActionResult Index()
@@ -66,6 +70,19 @@ namespace CoronaVirusCore.Controllers
         {
             ViewBag.Title = "About us";
             return View();
+        }
+
+        public IActionResult Shop()
+        {
+            //var result = this.repository.GetAllProducts();
+
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult Orders()
+        {
+            return Redirect("http://localhost:8888/App/shop#/Orders");
         }
 
     }
